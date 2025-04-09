@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rental App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar-brand span {
+            color: #007bff;
+        }
+
+        .back-btn {
+            background-color: #eaf2ff;
+            border: none;
+            color: #007bff;
+        }
+
+        
+        .property-section {
+            display: flex;
+            gap: 15px;
+            align-items: start;
+            flex-wrap: nowrap; 
+        }
+
+        
+        .property-img {
+            width: 950px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+      
+        .small-images {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .small-images img {
+            width: 140px;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .agent-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+       
+        .availability {
+            background-color: #002b5b;
+            color: white;
+            border-radius: 10px;
+            padding: 15px;
+            max-width: 200%; 
+            
+             width: 21rem;
+            text-align: center;
+        }
+
+        
+        @media (max-width: 992px) {
+            .property-section {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .property-img {
+                width: 100%;
+            }
+
+            .small-images {
+                flex-direction: row;
+                gap: 10px;
+            }
+
+            .small-images img {
+                width: 130px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .property-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .small-images {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .small-images img {
+                width: 110px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">rental<span>app</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Buy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Rent</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sold</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">New Homes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Find Agents</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Home Loans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <button class="btn btn-primary ms-3">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="d-flex align-items-center mb-3">
+            <button class="btn back-btn px-4">&larr; Go back to results</button>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-7 col-md-12">
+                <div class="property-section">
+                    <img src="/HomePage/prop-1.jpg" class="property-img img-fluid" alt="Property">
+                    <!-- <div class="small-images">
+                        <img src="/HomePage/prop-1.jpg" alt="Property Small 1">
+                        <img src="/HomePage/prop-1.jpg" alt="Property Small 2">
+                        <img src="/HomePage/prop-1.jpg" alt="Property Small 3">
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 mt-4 mt-lg-0">
+
+                <div class="d-flex gap-2 mb-">
+                    <button class="btn btn-primary">&larr; Prev</button>
+                    <button class="btn btn-primary">Next &rarr;</button>
+                </div>
+
+                <div class="availability">
+                    <h6>Available</h6>
+                    <h5>Wednesday, Jan 01 2025</h5>
+                </div>
+
+                <h6 class="mt-2 fw-bold">Marketed by</h6>
+                <div class="agent-card d-flex align-items-center mb-3">
+                    <img src="/HomePage/ls-1.jpg" alt="Lauren James">
+                    <div>
+                        <h6 class="mb-0">Lauren James</h6>
+                        <small>Listing Agent</small>
+                        <p class="mb-0"><i class="bi bi-telephone"></i> +64 111-222-3334</p>
+                        <p class="mb-0"><i class="bi bi-envelope"></i> laurajames@mail.com</p>
+                    </div>
+                </div>
+                <div class="agent-card d-flex align-items-center">
+                    <img src="/HomePage/ls-2.jpg" alt="Ethan Payne">
+                    <div>
+                        <h6 class="mb-0">Ethan Payne</h6>
+                        <small>Owner</small>
+                        <p class="mb-0"><i class="bi bi-telephone"></i> +64 222-333-4445</p>
+                        <p class="mb-0"><i class="bi bi-envelope"></i> ethanpayne@mail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 sidebar d-flex flex-column">
+                <img src="Imgs/newLogo.jpg" alt="">
+                <!-- <h4>Rental App</h4> -->
+                <h3>Set up your profile</h3>
+                <p class="para-text">A complete profile helps us serve you better. Let's make it perfect</p>
+                <ul class="list-group step-list">
+                    <li class="list-group-item active">
+                        <span class="step-circle">1</span> Personal Details
+                    </li>
+                    <li class="list-group-item">
+                        <span class="step-circle">2</span> Organization Details
+                    </li>
+                    <li class="list-group-item">
+                        <span class="step-circle">3</span> Team Details
+                    </li>
+                    <li class="list-group-item">
+                        <span class="step-circle">4</span> Property Location
+                    </li>
+                    <li class="list-group-item">
+                        <span class="step-circle">5</span> Property Details
+                    </li>
+                    <li class="list-group-item">
+                        <span class="step-circle">6</span> Property Media
+                    </li>
+                    <li class="list-group-item">
+                        <span class="step-circle">7</span> Tenancy Information
+                    </li>
+                    <li class="list-group-item">
+                        <span class="step-circle">8</span> Listing Contact
+                    </li>
+                    <li class="list-group-item">
+                        <span class="step-circle">9</span> Viewings
+                    </li>
+                    <li class="list-group-item">
+                        <span class="step-circle">10</span> Extra's
+                    </li>
+                    <li class="list-group-item">
+                        <span class="step-circle">11</span> Confirmation
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Form Section -->
+            <div class="col-md-9 d-flex align-items-stretch">
+                <div class="form-container w-75">
+                    <h4>Personal Details</h4>
+
+                    <!-- Profile Picture & Name Inputs -->
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="profile-section mb-3"></div>
+                        <img src="Imgs/profile-icon-9.png" alt="Profile Picture Placeholder"
+                            style="width: 100px; height: 100px; border-radius: 50%;">
+                        <div class="ms-3 flex-grow-1">
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                                <label for="firstname">Firstname*</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                                <label for="lastname">Lastname*</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form>
+                        <h5>Your Contact Details</h5>
+                        <div class="row mb-4">
+                            <div class="col-md-4 form-floating">
+                                <input type="text" class="form-control" id="countryCode" placeholder="+64" value="+64">
+                                <label for="countryCode">Country Code</label>
+                            </div>
+                            <div class="col-md-8 form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Email ID">
+                                <label for="email">Email ID *</label>
+                            </div>
+                        </div>
+
+                        <h5>Your Address</h5>
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control" id="searchAddress"
+                                placeholder="Search for your address">
+                            <label for="searchAddress">Search for your address</label>
+                        </div>
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4 form-floating">
+                                <input type="text" class="form-control" id="unit" placeholder="Unit Name/No">
+                                <label for="unit">Unit Name/No</label>
+                            </div>
+                            <div class="col-md-4 form-floating">
+                                <input type="text" class="form-control" id="house" placeholder="House/No">
+                                <label for="house">House/No</label>
+                            </div>
+                            <div class="col-md-4 form-floating">
+                                <input type="text" class="form-control" id="street" placeholder="Street Address">
+                                <label for="street">Street Address</label>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6 form-floating">
+                                <input type="text" class="form-control" id="suburb" placeholder="Suburb">
+                                <label for="suburb">Suburb</label>
+                            </div>
+                            <div class="col-md-6 form-floating">
+                                <input type="text" class="form-control" id="city" placeholder="City">
+                                <label for="city">City</label>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4 form-floating">
+                                <input type="text" class="form-control" id="state" placeholder="State">
+                                <label for="state">State</label>
+                            </div>
+                            <div class="col-md-4 form-floating">
+                                <input type="text" class="form-control" id="country" placeholder="Country">
+                                <label for="country">Country</label>
+                            </div>
+                            <div class="col-md-4 form-floating">
+                                <input type="text" class="form-control" id="pincode" placeholder="Pincode">
+                                <label for="pincode">Pincode</label>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary">Next →</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
